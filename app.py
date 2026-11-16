@@ -96,6 +96,6 @@ with gr.Blocks(title="AI Examiner Agent | NLP") as demo:
 
 if __name__ == "__main__":
     demo.queue(default_concurrency_limit=8).launch(
-        server_name="0.0.0.0" if os.getenv("SPACE_ID") else "127.0.0.1",
-        server_port=int(os.getenv("GRADIO_SERVER_PORT", "7860")),
+        server_name="0.0.0.0",
+        server_port=int(os.getenv("PORT", "7860")),
     )
