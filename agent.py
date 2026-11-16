@@ -16,7 +16,7 @@ from exam_tools import (
     timestamp,
 )
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 MAX_TURNS_PER_TOPIC = 3
 
 TOOL_DEFINITIONS = {
